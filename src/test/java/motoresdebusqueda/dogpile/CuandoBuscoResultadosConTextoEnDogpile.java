@@ -15,29 +15,30 @@ import org.openqa.selenium.WebDriver;
 import java.io.IOException;
 import java.util.List;
 
+import static java.lang.Thread.sleep;
+
 @RunWith(SerenityRunner.class)
 
-public class CuandoBuscoResultadosConTexto {
+public class CuandoBuscoResultadosConTextoEnDogpile {
     @Steps
     UsuarioDogPile juan;
-
     @Managed
     WebDriver driver;
-
     @Test
-    public void resultado_de_wikipedia_contiene_texto_correcto(){
+    public void resultado_de_wikipedia_contiene_texto_correcto() throws InterruptedException {
         juan.ingresa_a_dogpile();
 
         juan.busca_por_palabra_clave("rock  nacional");
 
         juan.deberia_ver_resultado_de_titulo_con_texto_correcto("Argentine rock - Wikipedia",
                 "Argentine Rock Nacional is one of the principal predecessors");
+        sleep(20000);
     }
 
     @After
     public void despuesDeEjecutarElTest(){
 
-        driver.quit();
+       // driver.quit();
         //cerrartodoslo;
         
     }
