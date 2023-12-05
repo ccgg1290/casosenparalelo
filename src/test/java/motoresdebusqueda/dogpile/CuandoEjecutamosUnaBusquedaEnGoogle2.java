@@ -24,7 +24,7 @@ public class CuandoEjecutamosUnaBusquedaEnGoogle2 {
 
         juan.deberia_ver_resutlados_con_palabra("rock");
 
-        sleep(20000);
+        //sleep(20000);
     }
 
 }

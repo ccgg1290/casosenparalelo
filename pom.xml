@@ -126,14 +126,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <skip>true</skip>
+                    <skip></skip>
                 </configuration>
             </plugin>
 
-            <plugin>
+           <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
+
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/Test*.java</include>
@@ -141,13 +142,15 @@
                         <include>**/When*.java</include>
                         <include>**/Cuando*.java</include>
                     </includes>
+
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
                     </systemPropertyVariables>
+                    <!--
                     <parallel>classes</parallel>
                     <threadCount>1</threadCount>
                     <forkCount>0</forkCount>
-
+                    -->
                 </configuration>
                 <executions>
                     <execution>

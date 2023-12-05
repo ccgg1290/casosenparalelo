@@ -32,7 +32,7 @@ public class CuandoBuscoResultadosConTextoEnDogpile {
 
         juan.deberia_ver_resultado_de_titulo_con_texto_correcto("Argentine rock - Wikipedia",
                 "Argentine Rock Nacional is one of the principal predecessors");
-        sleep(20000);
+        //sleep(20000);
     }
 
     @After

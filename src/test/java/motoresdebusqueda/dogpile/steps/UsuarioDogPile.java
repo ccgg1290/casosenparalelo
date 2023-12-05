@@ -25,6 +25,7 @@ public class UsuarioDogPile {
 
     @Step("#actor ingresa a la pagina principal de dogpile")
     public void ingresa_a_google() {
+
         paginaPrincipalGoogle.open();
     }
 

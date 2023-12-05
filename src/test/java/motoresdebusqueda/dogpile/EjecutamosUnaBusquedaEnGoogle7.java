@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import static java.lang.Thread.sleep;
 
 @RunWith(SerenityRunner.class)
-public class CuandoEjecutamosUnaBusquedaEnGoogle4 {
+public class EjecutamosUnaBusquedaEnGoogle7 {
     @Steps
     UsuarioDogPile juan;
     @Managed
@@ -23,8 +23,7 @@ public class CuandoEjecutamosUnaBusquedaEnGoogle4 {
         juan.busca_por_palabra_clave("rock nacional");
 
         juan.deberia_ver_resutlados_con_palabra("rock");
-
-       sleep(20000);
+        //sleep(20000);
     }
 
 }
